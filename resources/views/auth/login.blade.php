@@ -1,73 +1,57 @@
-@extends('layouts.app')
-
+@extends('master.master_home')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
+<main class="vh-100">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 p-5">
+                <div class="card shadow p-5">
+                    <div class="card-body p-1">
+                        <h2 class="card-title text-center fw-bolder">Login</h2>
+                        <form action="">
+                            {{-- <div class="input-group mb-3">
+                                <label class="col-sm-2 col-form-label">Email/Username</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="Email" class="form-control" placeholder="Email address">
                                 </div>
                             </div>
-                        </div>
+                            <div class="input-group mb-3">
+                                <label class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="password" class="form-control" placeholder="Password">
+                                </div>
+                            </div> --}}
+    
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                              </div>
+                                  
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                              </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                              </div>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
+                              {{-- <div class="text-center">
+                                <p>login dengan :</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="bi bi-google"></i></button>
+                                <button type="button" class="btn btn-link btn-floating mx-1"><i class="bi bi-facebook"></i></button>
+                              </div> --}}
+
+                              <div class="text-center">
+                                <p>login dengan :</p>
+                                <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-google"></i></button>
+                                <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-github"></i></button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</main>
 @endsection

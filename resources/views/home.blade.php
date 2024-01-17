@@ -1,4 +1,15 @@
 @extends('master.master_home')
 @section('content')
-<p class="vh-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, cum modi architecto incidunt vel quae earum assumenda. Atque iure mollitia deleniti sint, dolor sapiente, repudiandae error doloremque quia, vitae amet?</p>
+<main class="main">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <figure class="figure">
+                    <img src="path/to/your/image.jpg" class="figure-img img-fluid w-100" alt="Image">
+                    <figcaption class="figure-caption text-center">Caption for your image goes here.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</main>
 @endsection

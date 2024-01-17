@@ -22,6 +22,17 @@
 }
 
 
+@media only screen and (max-width: 992px) {
+    .carousel-caption {
+        margin-bottom: 4rem;
+        font-family: 'poppins', sans-serif;
+    }
+    .carousel-caption h1 {
+        font-size: 4rem;
+    }
+}
+
+
 
 @media only screen and (max-width: 500px)  {
     .carousel-caption {

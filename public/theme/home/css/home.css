@@ -1,0 +1,22 @@
+
+.car {
+    overflow: hidden;
+}
+
+.car img {
+    height: 41rem;
+}
+
+.carousel-caption {
+    margin-bottom: 14rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.carousel-caption h1 {
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}

@@ -13,11 +13,16 @@
     <div class="container">
         <div class="row justify-content-center py-4">
             <!-- sosmed -->
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 social-media">
                 <h4>Social Media</h4>
-                <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-instagram footer-icon text-secondary"></i></a>
-                <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-twitter footer-icon text-secondary"></i></a>
-                <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-facebook-square footer-icon text-secondary"></i></a>
+                <ul class="list-unstyled d-flex">
+                    <li class="mr-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-instagram footer-icon"></i></a>
+                    </li>
+                    <li class="mx-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-twitter footer-icon"></i></a>
+                    </li>
+                    <li class="mx-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-facebook-square footer-icon"></i></a>
+                    </li>
+                </ul>
             </div>
             <div class="col-lg-4 mb-4">
                 <!-- privacy & policy -->

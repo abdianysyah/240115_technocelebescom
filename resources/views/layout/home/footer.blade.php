@@ -1,6 +1,6 @@
 {{-- <footer>
     {{-- <p>ini footernya</p> --}}
-    {{-- footernya di bagi jadi 3
+{{-- footernya di bagi jadi 3
     isi footer :
     - sosmed --> font awesome
     - privacy policy
@@ -9,99 +9,68 @@
     - credits
     - teams
     - FAQ --> according --}}
-    <div class="container-fluid bg-primary">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="text-white">
-                        <li><a class="text-white" href="">intagram</a></li>
-                        <li><a class="text-white" href="">facebook</a></li>
-                        <li><a class="text-white" href="">twitter</a></li>
-                        <li><a class="text-white" href="">linkedin</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row justify-content-center py-4">
+            <!-- sosmed -->
+            <div class="col-lg-4 mb-4 social-media">
+                <h4>Social Media</h4>
+                <ul class="list-unstyled d-flex">
+                    <li class="mr-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-instagram footer-icon"></i></a>
+                    </li>
+                    <li class="mx-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-twitter footer-icon"></i></a>
+                    </li>
+                    <li class="mx-1"> <a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-facebook-square footer-icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <!-- privacy & policy -->
+                <h4>Privacy & Policy</h4>
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fas fa-scroll"></i> terms & condition</a></li>
+                    <li><a href=""><i class="fas fa-suitcase"></i> career</a></li>
+                    <li><a href=""><i class="fas fa-money-bill"></i> credits</a></li>
+                    <li><a href=""><i class="fas fa-users"></i> teams</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <!-- section faq -->
+                <h4>FAQ</h4>
+                <div class="accordion accordion-flush" id="accordionFAQ">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Privacy Policy
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Accordion Item #1
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis expedita tempora corrupti amet optio temporibus illo in vel officia fugiat saepe assumenda voluptas beatae, omnis ullam voluptatibus autem vitae dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et incidunt consequatur esse quia cupiditate nobis quo reiciendis laborum error accusantium voluptate dignissimos facilis, quis perspiciatis minima rerum atque quasi explicabo.
-                            </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                         </div>
                     </div>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Terms & Condition
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quis odit dignissimos tempora voluptas corrupti officia ea unde reprehenderit voluptates excepturi quos aliquam, praesentium ipsum provident laborum. Iusto, sunt adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laboriosam magnam distinctio nihil perspiciatis nam nobis a, tenetur natus ullam voluptatibus enim aut vero quisquam, quae dolores optio rerum harum.
-                                </div>
-                            </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <ul>
-                        <li><a class="text-white" href="">Team kami</a></li>
-                        <li><a class="text-white" href="">FAQ</a></li>
-                    </ul>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    {{-- <div class="footer">
-            <div class="col-lg-4">
-                    <ul>
-                        <li><a href="">intagram</a></li>
-                        <li><a href="">facebook</a></li>
-                        <li><a href="">twitter</a></li>
-                        <li><a href="">linkedin</a></li>
-                    </ul>
-            </div>
-        
-            <div class="col-lg-4">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Privacy Policy
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis expedita tempora corrupti amet optio temporibus illo in vel officia fugiat saepe assumenda voluptas beatae, omnis ullam voluptatibus autem vitae dicta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et incidunt consequatur esse quia cupiditate nobis quo reiciendis laborum error accusantium voluptate dignissimos facilis, quis perspiciatis minima rerum atque quasi explicabo.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Terms & Condition
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quis odit dignissimos tempora voluptas corrupti officia ea unde reprehenderit voluptates excepturi quos aliquam, praesentium ipsum provident laborum. Iusto, sunt adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laboriosam magnam distinctio nihil perspiciatis nam nobis a, tenetur natus ullam voluptatibus enim aut vero quisquam, quae dolores optio rerum harum.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-lg-4">
-                <ul>
-                    <li><a href="">Team kami</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </div>
-    </div> --}}
-</footer>
+    </footer>

@@ -1,0 +1,30 @@
+nav {
+    background-color: #6ba7c3;
+    
+}
+
+body {
+    right: 0;
+    left: 0;
+    font-family: 'opensans';
+}
+
+.footer {
+    background-color: #6ba7c3;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media a:hover {
+    transition: 500ms;
+    color: #6ba7c3;
+}
+
+.social-media a {
+    transition: 500ms;
+    color: grey;
+}

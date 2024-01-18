@@ -3,11 +3,11 @@
 <main class="vh-100">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-lg-6 p-5">
+            <div class="col-lg-6 p-3">
                 <div class="card shadow p-5">
                     <div class="card-body p-1">
                         <h2 class="card-title text-center fw-bolder">Login</h2>
-                        <form action="">
+                        <form action="" method="">
                             {{-- <div class="input-group mb-3">
                                 <label class="col-sm-2 col-form-label">Email/Username</label>
                                 <div class="col-sm-10">

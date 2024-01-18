@@ -243,5 +243,83 @@
         </div>
     </div>
 
+    <div class="container my-5">
+        <h2 class="display-6 fw-bold mb-5 text-center" style="font-family: 'poppins';" data-aos="zoom-in-up" data-aos-duration="0800">FAQ</h2>
+        <div class="row justify-content-center">
+            <!-- faq image -->
+            <div class="col-lg-5 col-md-12 mb-5 mx-auto" data-aos="fade-right" data-aos-duration="0900">
+                <div class="text-center img-choose">
+                    <img src="theme/home/asets/faq-1.jpg" class="rounded-3 img-fluid why-choose-us" style="box-shadow: 0 4px 8px #B0B0B0;" alt="image">
+                </div>
+            </div>
+            <!-- accordion Faq -->
+            <div class="col-lg-6 col-md-10 col-sm-12">
+                <div class="accordion" id="accordionExample" data-aos="fade-left" data-aos-duration="0800">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item show" style="border-radius: 30px; ">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="border-radius: 30px;">
+                                Bagaimana Memesan Jasa Kami?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="border-radius: 30px;">
+                            <div class="accordion-body text-secondary">
+                                <P>Anda dapat melakukan salah satu hal berikut:</P>
+
+                                <ol>
+                                    <li>
+                                        <P>Langsung datang ke kantor kami di 35, Jalan Tadulako, Kota Palu, Sulawesi Tengah, Indonesia.</P>
+                                    </li>
+                                    <li>
+                                        <P>Hubungi kami melalui halaman kontak</P>
+                                    </li>
+                                    <li>
+                                        <P>Hubungi kami melalui email official@techno-celebes.com</P>
+                                    </li>
+                                    <li>
+                                        <P>Hubungi kami melalui whatsapp di <a href="https://api.whatsapp.com/send/?phone=6282194077126&text&type=phone_number&app_absent=0" class="text-primary">+62-821-9407-7126</a></P>
+                                    </li>
+                                    <li>
+                                        <P>Hubungi kami melalui media sosial kami (Facebook dan Instagram) - Respon Lambat</P>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item my-4" style="border-radius: 30px;">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="border-radius: 30px;">
+                                Bagaimana Jika Website Belum Selesai Ketika Batas Waktu Yang Di Tentukan?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="border-radius: 30px;">
+                            <div class="accordion-body">
+                                <p class="text-secondary">Jika aplikasi tidak selesai tepat waktu, maka akan mendapat diskon sesuai perjanjian di surat perjanjian</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item " style="border-radius: 30px;  ">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="border-radius: 30px;">
+                                Dimana dan Bagaimana Pembayaran Dilakukan?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="border-radius: 30px;">
+                            <div class="accordion-body">
+                                <p class="text-secondary">Pembayaran hanya dilakukan di rekening CV Techno Celebes atau melalui cash di kantor CV Techno Celebes. Jika terdapat pihak yang ingin membayar di luar dari ketentuan di atas, maka itu di luar dari tanggung jawab kami. <br><br>
+                                    Mengenai pembayaran layanan, konsumen dapat memilih untuk melunasi semuanya atau membayar DP sebesar 50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </main>
 @endsection

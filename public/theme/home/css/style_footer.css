@@ -1,7 +1,12 @@
 .navbar {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
+    overflow: hidden;
+    transition: all .5s ease;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -10,14 +15,14 @@
 
 
 .navbar-brand span {
-    color: #6ba7c3;
+    color: #00618e;
 }
 
 .navbar-nav a {
     color: #fff;
 }
 
-.navbar-nav a:hover {
+.navbar-nav li a:hover {
     color: #6ba7c3;
 }
 
@@ -30,18 +35,26 @@
     background-color: #111;
 }
 
-.navbar button {
+.navbar .button-ku {
     border-radius: 40px;
     width: 100px;
     border: 2px solid #000;
     font-weight: 700;
 }
 
-.navbar button:hover {
+.navbar .button-ku:hover {
     background-color: #6ba7c3;
     color: #fff;
     outline: none;
 }
+
+.bg-scroll {
+    background-color: #111;
+}
+
+
+
+/* footer */
 
 body {
     right: 0;
@@ -73,6 +86,11 @@ a {
     animation: slide-down 0.3s ease-out;
 }
 
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+
 @keyframes slide-down {
     from {
         transform: translateY(-10px);
@@ -85,6 +103,9 @@ a {
 }
 
 
+
+
+
 @media only screen and (max-width: 500px) {
     .navbar {
         padding: 0;
@@ -95,18 +116,19 @@ a {
         font-size: 14px;
     }
 
-    .navbar button {
+    .navbar .button-ku {
         width: 70px;
         background-color: #000;
         color: #ffffff;
-        border-radius: 6px;
+        border-radius: 10px;
         outline: none;
         border: none;
     
     }
 
-    .navbar button:hover {
+    .navbar .button-ku:hover {
         color:  #ffffff;
         outline: none;
     }
+
 }

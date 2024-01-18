@@ -14,17 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home.home');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/admin', 'AdminController@admin')->name('admin');
-
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'Homespace\HomeController@index')->name('home');
+Route::get('/admin', 'Homespace\AdminController@admin')->name('admin');
+Route::get('/article', 'Homespace\ArticleController@artikel')->name('article');
+Route::get('/contact', 'Homespace\HomeController@contact')->name('contact');
+Route::get('/profile', 'Homespace\HomeController@profile')->name('profile');
+Route::get('/service', 'Homespace\HomeController@service')->name('service');
+Route::get('/about', 'Homespace\HomeController@about')->name('about');
+Route::get('/visi_misi', 'Homespace\HomeController@visi_misi')->name('visi_misi');

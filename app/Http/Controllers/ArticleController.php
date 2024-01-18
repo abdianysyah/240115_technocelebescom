@@ -10,6 +10,6 @@ class ArticleController extends Controller
     public function artikel()
     {
         $article = ArticleModel::all();
-        return view('article');
+        return view('article',['article' => $article]);
     }
 }

@@ -21,7 +21,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Portofolio</a>
-          </li>
+          </li> 
           <li class="nav-item">
             <a class="nav-link" href="#">Service</a>
           </li>

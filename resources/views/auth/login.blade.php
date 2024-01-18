@@ -22,17 +22,21 @@
                             </div> --}}
 
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                                <input type="text" class="form-control" placeholder="name@example.com">
+                                <label>Username</label>
                             </div>
-
+                                  
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
+                              </div>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end p-1">
+                                <button type="submit" class="btn btn-primary">Login</button>
                             </div>
 
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button type="submit" class="btn btn-primary">Login</button>
+                            <div class="alert alert-danger" role="alert">
+                                Maaf username atau password yang anda masukkan salah!
                             </div>
 
                             {{-- <div class="text-center">
@@ -42,9 +46,9 @@
                                 <button type="button" class="btn btn-link btn-floating mx-1"><i class="bi bi-facebook"></i></button>
                               </div> --}}
 
-                            <div class="text-center">
+                              <div class="text-center">
                                 <p>login dengan :</p>
-                                <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-google"></i></button>
+                                <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-google"></i></button> atau
                                 <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-github"></i></button>
                             </div>
                         </form>

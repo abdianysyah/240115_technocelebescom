@@ -28,13 +28,13 @@
                     <!-- section Fast Link -->
                     <h4>Fast Link</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i> Tentang</a></li>
-                        <li><a href="#"><i class="fas fa-eye"></i> Visi & Misi</a></li>
-                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                        <li><a href="#"><i class="fas fa-images"></i> Portofolio</a></li>
-                        <li><a href="#"><i class="fas fa-cogs"></i> Service</a></li>
-                        <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li><a href="{{ route('home') }}"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="{{ route('about') }}"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                        <li><a href="{{ route('visi_misi') }}"><i class="fas fa-eye"></i> Visi & Misi</a></li>
+                        <li><a href="{{ route('contact') }}"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="{{ route('profile') }}"><i class="fas fa-images"></i> Portofolio</a></li>
+                        <li><a href="{{ route('service') }}"><i class="fas fa-cogs"></i> Service</a></li>
+                        <li><a href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
                     </ul>
                 </div>
             </div>

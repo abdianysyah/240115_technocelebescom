@@ -1,0 +1,55 @@
+@media (max-width: 769px) {
+    .img-choose img {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.img-choose {
+    position: relative;
+}
+
+.img-choose::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.why-choose-us {
+    z-index: 2;
+}
+
+.card-header img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 5px rgb(98, 98, 98);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card-header:hover img {
+    transform: scale(1.05);
+}
+
+.badge {
+    box-shadow: 0 4px 8px #B0B0B0;
+}
+
+.card {
+    box-shadow: -4px 4px 8px #B0B0B0;
+    height: 34rem;
+}
+
+.owl-carousel .owl-stage {
+    margin-left: 7px;
+}
+
+.owl-carousel .owl-item {
+    margin-right: 7px;
+}

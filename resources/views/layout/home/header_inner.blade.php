@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg px-lg-5 py-3 shadow navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">TECHNO-<span>CELEBES</span></a>
+            <a class="navbar-brand text-white" href="{{ route('home') }}">TECHNO-<span>CELEBES</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,23 +12,23 @@
                             Profile
                         </a>
                         <ul class="dropdown-menu slide-down" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Tentang</a></li>
-                            <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('about') }}">Tentang</a></li>
+                            <li><a class="dropdown-item" href="{{ route('visi_misi') }}">Visi & Misi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                        <a class="nav-link " aria-current="page" href="{{ route('contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portofolio</a>
+                        <a class="nav-link" href="{{ route('profile') }}">Portofolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
+                        <a class="nav-link" href="{{ route('service') }}">Service</a>
                     </li>
 
 
                 </ul>
-                <button class="btn btn-light" type="submit">Login</button>
+                <a class="btn btn-light" href="{{ route('login') }}" type="button">Login</a>
             </div>
         </div>
     </nav>

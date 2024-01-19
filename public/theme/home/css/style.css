@@ -53,3 +53,17 @@
 .owl-carousel .owl-item {
     margin-right: 7px;
 }
+
+.text-breadcrumb a {
+    color: black;
+    transition: 300ms;
+}
+
+.text-breadcrumb a:hover {
+    color: wheat;
+    transition: 300ms;
+}
+
+.bread-crumb {
+    background-color: #6ba7c3;
+}

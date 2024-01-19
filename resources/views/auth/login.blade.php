@@ -1,7 +1,18 @@
 @extends('master.master_inner')
 @section('content')
-<main class="vh-100">
-    <div class="container-fluid">
+<main>
+    <!-- bread-crumb -->
+    <div class="bread-crumb d-flex align-items-center w-100" style="height: 20rem">
+        <div class="container py-4 text-center" data-aos="fade-up" data-aos-duration="0900">
+            <h1 class="display-2 fw-bold">Login</h1>
+            <ul class="text-breadcrumb list-unstyled d-flex fs-4 justify-content-center align-items-center">
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li class="mx-2">|</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid my-5" data-aos="zoom-in" data-aos-duration="1200">
         <div class="row justify-content-center">
             <div class="col-lg-6 p-3">
                 <div class="card shadow p-5">
@@ -25,11 +36,11 @@
                                 <input type="text" class="form-control" placeholder="name@example.com">
                                 <label>Username</label>
                             </div>
-                                  
+
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
-                              </div>
+                            </div>
 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end p-1">
                                 <button type="submit" class="btn btn-primary">Login</button>
@@ -44,9 +55,9 @@
                                 <button type="button" class="btn btn-link btn-floating mx-1">
                                     <i class="bi bi-google"></i></button>
                                 <button type="button" class="btn btn-link btn-floating mx-1"><i class="bi bi-facebook"></i></button>
-                              </div> --}}
+                            </div> --}}
 
-                              <div class="text-center">
+                            <div class="text-center">
                                 <p>login dengan :</p>
                                 <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-google"></i></button> atau
                                 <button type="button" class="btn btn-light btn-square rounded-circle"><i class="fab fa-github"></i></button>

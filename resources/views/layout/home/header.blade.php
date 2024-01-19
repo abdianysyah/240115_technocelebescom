@@ -25,10 +25,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Service</a>
           </li>
-
-
         </ul>
-        <button class="btn btn-light" type="submit">Login</button>
+        <button class="btn btn-light button-ku" type="submit">Login</button>
       </div>
     </div>
   </nav>
@@ -45,21 +43,21 @@
                     <div class="carousel-inner car-img">
                       <div class="carousel-item active">
                         <img src="https://images.unsplash.com/photo-1611416457332-946853cc75d6?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                           <h1>Jasa pembuatan website profesional</h1>
                           <p>Tingkatkan kehadiran online bisnis Anda dengan layanan pembuatan website profesional kami.</p>
                         </div>
                       </div>
                       <div class="carousel-item car-img">
                         <img src="https://images.unsplash.com/photo-1462007895615-c8c073bebcd8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                           <h1>Web Development Indonesia</h1>
                           <p>"Solusi web development terbaik di Indonesia untuk kebutuhan bisnis dan personal Anda.</p>
                         </div>
                       </div>
                       <div class="carousel-item car-img">
                         <img src="https://images.unsplash.com/photo-1542642839-83adadcbe645?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                           <h1>Desain Responsif</h1>
                           <p>Some representative placeholder content for the third slide.</p>
                         </div>

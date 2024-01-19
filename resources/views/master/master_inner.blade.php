@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Techno Celebes || Jasa Teknologi dan Informasi Kota Palu</title>
     <link rel="stylesheet" href="{{asset('theme/home/plugin/bootstrap-5.0.2-dist/css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('theme/home/plugin/font-awesome-4.7.0/css/font-awesome.min.css')}}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -31,6 +31,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-RM5tpOEd8GE6uj1t9gfrFqFl5Hly6dpb1E/B1lR9DO8z/FfYKVv/7pDCGh5PLONZ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="theme/home/js/main.js"></script>
+    <script src="theme/home/js/home.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -8,13 +8,13 @@ use App\Model\Service as ServiceModel;
 class HomeController extends Controller
 {
     /**
-    * Create a new controller instance.
-    *
-    * @return void
-    */
+     * Create a new controller instance.
+     *
+     * @return void
+     */
     public function __construct()
     {
-         $this->middleware('auth');
+        $this->middleware('auth');
     }
 
     /**
@@ -46,5 +46,4 @@ class HomeController extends Controller
     {
         return view('home.visi&misi');
     }
-
 }

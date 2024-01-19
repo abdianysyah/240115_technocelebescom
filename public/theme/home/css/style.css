@@ -67,3 +67,51 @@
 .bread-crumb {
     background-color: #6ba7c3;
 }
+
+.btn-contact {
+    background-color: #6ba7c3;
+    font-weight: bold;
+    color: white;
+}
+.btn-contact:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #6ba7c3;
+    border: 2px solid #6ba7c3;
+}
+
+.content-konsultasi {
+    color: #e1e1e1;
+}
+
+.content-konsultasi:hover {
+    color: #c7c7c7;
+}
+
+.item-misi {
+    transition: 500ms;
+}
+.item-misi i {
+    color: #545454;
+}
+.item-misi:hover .mission-item {
+    margin-top: -10px;
+    transition: 500ms;
+}
+.item-misi .mission-item {
+    transition: 500ms;
+}
+.item-misi:hover i {
+    color: #5ca3aa;
+    transition: 500ms;
+}
+.item-misi i {
+    transition: 500ms;
+}
+.item-misi:hover h2 {
+    transform: scale(1.03);
+    transition: 500ms;
+}
+.item-misi h2 {
+    transition: 500ms;
+}

@@ -1,6 +1,6 @@
 @extends('master.master_inner')
 @section('content')
-<main class="vh-100">
+<main class="main">
     <!-- bread-crumb -->
     <div class="bread-crumb d-flex align-items-center w-100" style="height: 20rem">
         <div class="container py-4 text-center" data-aos="fade-up" data-aos-duration="0900">

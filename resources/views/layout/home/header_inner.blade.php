@@ -28,7 +28,7 @@
 
 
                 </ul>
-                <a class="btn btn-light" href="{{ route('login') }}" type="button">Login</a>
+                <a class="btn btn-light button-ku" href="{{ route('login') }}" type="button">Login</a>
             </div>
         </div>
     </nav>

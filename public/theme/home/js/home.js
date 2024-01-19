@@ -7,3 +7,14 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// $(".card-contain")
+//     .on("mouseenter", function () {
+//         $(this).find(".deskription").css("display", "flex");
+//         $(this).find(".card-content").fadeIn();
+//     })
+//     .on("mouseleave", function () {
+//         $(this).find(".deskription").css("display", "none");
+//         $(this).find(".card-content").fadeOut();
+//     });

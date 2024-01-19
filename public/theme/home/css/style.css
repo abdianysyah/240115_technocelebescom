@@ -67,3 +67,102 @@
 .bread-crumb {
     background-color: #6ba7c3;
 }
+
+
+
+
+/* portofolio */
+
+.porto {
+    padding: 5rem 0;
+}
+
+.card-contain {
+    background-size: cover;
+    backdrop-filter: ;
+    background-position: center;
+    height: 300px;
+    width: 350px;
+    margin-bottom: 4rem;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 5px 10px #222;
+}
+
+.porto .satu {
+    background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.porto .dua {
+    background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.porto .tiga {
+    background-image: url("https://images.unsplash.com/photo-1476842634003-7dcca8f832de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.porto .empat {
+    background-image: url("https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.porto .lima {
+    background-image: url("https://images.unsplash.com/photo-1705404193661-73eb21f6514a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.card-contain .card-desk {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 1s ease;
+}
+
+.card-contain .card-desk h3 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.card-contain .card-desk h5 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.card-contain .card-desk p {
+    font-size: 10px;
+    color: #fff;
+    transition: 1s ease;
+}
+
+.card-desk .my-button {
+    background-color: #6ba7c3;
+    color: #fff;
+    font-size: 14px;
+    width: 150px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.card-desk .my-button i {
+    padding-left: 5px;
+    transition: all .3s ease-in-out;
+}
+
+/* .card-contain:hover {
+    transform: scale(1.1);
+} */
+
+.card-desk .my-button:hover {
+    background: transparent;
+    
+}
+
+.card-desk .my-button:hover i {
+    transform: translateX(10px);
+}
+
+
+@media only screen and (max-width: 576px) {
+    .card-contain {
+        width: 330px;
+        height: 330px;
+    }
+}

@@ -2,7 +2,6 @@
     background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
-    overflow: hidden;
     transition: all .5s ease;
     position: absolute;
     z-index: 99;
@@ -38,14 +37,16 @@
 .navbar .button-ku {
     border-radius: 40px;
     width: 100px;
-    border: 2px solid #000;
     font-weight: 700;
+    transition: .4s ease-in-out;
 }
 
 .navbar .button-ku:hover {
     background-color: #6ba7c3;
     color: #fff;
+    border: none;
     outline: none;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, .7);
 }
 
 .bg-scroll {

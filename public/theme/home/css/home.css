@@ -33,12 +33,11 @@
 }
 
 
-
 @media only screen and (max-width: 576px)  {
     .carousel-caption {
-        margin-bottom: 14rem;
+        margin-bottom: 8rem;
         font-family: 'poppins', sans-serif;
-        margin-right: 16rem;
+        margin-right: 0;
     }
 
     .carousel-caption h1 {
@@ -50,7 +49,7 @@
     }
 
     .car-img {
-        width: 650px;
+        width: 100%;
+        height: auto;
     }
-    
 }

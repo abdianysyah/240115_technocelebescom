@@ -27,3 +27,7 @@ Route::get('/profile', 'Homespace\HomeController@profile')->name('profile');
 Route::get('/service', 'Homespace\HomeController@service')->name('service');
 Route::get('/about', 'Homespace\HomeController@about')->name('about');
 Route::get('/visi_misi', 'Homespace\HomeController@visi_misi')->name('visi_misi');
+
+
+
+Route::post('create-article','ArticleController@create_article')->name('create-article');

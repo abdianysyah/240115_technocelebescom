@@ -6,13 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>yowaimo
-  @foreach ($article as $a)
-  {{ $a ->id }};
-  {{ $a ->title }};
-  {{ $a ->image }};
-  {{ $a ->isi }};
-  @endforeach
+<body>
+  <form method="post" action = "{{route('create-article')}}">
+    {{ @csrf_field()}}
+    <label>title</label>
+    <input type="text" name ="title">
+
+    <label>image</label>
+    <input type="text" name ="image">
+    
+    <label>isi</label>
+    <input type="text" name ="isi">
+    <button type="submit">tambah</button>
+</form>
   
 </body>
 </html>

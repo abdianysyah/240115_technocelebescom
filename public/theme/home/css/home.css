@@ -24,6 +24,10 @@
     overflow: hidden;
 }
 
+.main .nama {
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 1600px) {
     .carousel-caption {
         margin-bottom: 9rem;

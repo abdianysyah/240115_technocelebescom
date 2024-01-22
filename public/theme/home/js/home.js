@@ -1,4 +1,3 @@
-const { event } = require("jquery");
 
 $(document).ready(function () {
     $(".navbar-toggler").on("click", function () {

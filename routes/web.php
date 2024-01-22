@@ -32,6 +32,16 @@ Route::get('/visi_misi', 'Homespace\HomeController@visi_misi')->name('visi_misi'
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', "AdminSpace\AdminController@index")->name("dashboard");
+
+	Route::prefix('article')->group(function () {
+	    Route::get('/list', "AdminSpace\ArticleController@view_list")->name("article-list");
+	    Route::get('/create', "AdminSpace\ArticleController@view_create")->name("create-article");
+	    Route::get('/update', "AdminSpace\ArticleController@view_update")->name("create-article");
+
+	    Route::post('/delete', "AdminSpace\ArticleController@post_delete")->name("delete-article-post");
+	    Route::post('/create', "AdminSpace\ArticleController@post_create")->name("create-article-post");
+	    Route::post('/update', "AdminSpace\ArticleController@post_update")->name("update-article-post");
+	});
 });
 
 Route::post('create-article', 'ArticleController@create_article')->name('create-article');

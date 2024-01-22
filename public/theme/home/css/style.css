@@ -172,3 +172,32 @@
         height: 330px;
     }
 }
+
+@media (max-width: 769px) {
+    .img-choose img {
+        height: 17rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.item-misi:hover h2 {
+    margin-top:-12px;
+    transition: 500ms;
+}
+
+.item-misi h2 {
+    transition: 500ms;
+}
+
+.item-misi:hover i {
+    transform: scale(1.05);
+    color: #323232;
+    transition: 500ms;
+}
+
+.item-misi i {
+    color: #646464;
+    transition: 500ms;
+}
+

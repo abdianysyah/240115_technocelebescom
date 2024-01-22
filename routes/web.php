@@ -30,4 +30,4 @@ Route::get('/visi_misi', 'Homespace\HomeController@visi_misi')->name('visi_misi'
 
 
 
-Route::post('create-article','ArticleController@create_article')->name('create-article');
+Route::post('create-article', 'ArticleController@create_article')->name('create-article');

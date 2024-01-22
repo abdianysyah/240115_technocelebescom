@@ -31,10 +31,16 @@
     </div>
   </nav>
 
+  <div class="container-fluid mb-5 p-0 car mx-0">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselExampleAutoplaying" class="carousel slide">
+
   <div class="container-fluid mb-5 p-0 mx-0 car">
     <div class="row">
       <div class="col-lg-12">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -46,7 +52,9 @@
               <div class="carousel-caption d-md-block">
                 <h1>Jasa pembuatan website profesional</h1>
                 <p>Tingkatkan kehadiran online bisnis Anda dengan layanan pembuatan website profesional kami.</p>
+
                 <button class="btn btn-primary">Contact Us</button>
+
               </div>
             </div>
             <div class="carousel-item car-img">
@@ -54,7 +62,10 @@
               <div class="carousel-caption d-md-block">
                 <h1>Web Development Indonesia</h1>
                 <p>"Solusi web development terbaik di Indonesia untuk kebutuhan bisnis dan personal Anda.</p>
+
+
                 <button class="btn btn-primary">Contact Us</button>
+
               </div>
             </div>
             <div class="carousel-item car-img">
@@ -62,7 +73,9 @@
               <div class="carousel-caption d-md-block">
                 <h1>Desain Responsif</h1>
                 <p>Some representative placeholder content for the third slide.</p>
+
                 <button class="btn btn-primary">Contact Us</button>
+
               </div>
             </div>
           </div>

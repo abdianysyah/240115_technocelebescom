@@ -1,4 +1,4 @@
-media (max-width: 769px) {
+@media (max-width: 769px) {
     .img-choose img {
         height: 20rem;
         width: 100%;
@@ -71,44 +71,44 @@ media (max-width: 769px) {
 
 
 
-/* portofolio */
+/* ===========================portofolio===================== */
 
 .porto {
     padding: 5rem 0;
 }
 
 .card-contain {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
     background-size: cover;
-    backdrop-filter: ;
     background-position: center;
     height: 300px;
     width: 350px;
     margin-bottom: 4rem;
     transition: all .5s ease-in-out;
-    box-shadow: 0 5px 10px #222;
+    box-shadow: 0 5px 15px #000;
 }
 
-.porto .satu {
-    background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.card-contain img {
+    transition: all .5s ease;
 }
 
-.porto .dua {
-    background-image: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.card-contain:hover img {
+    transform: scale(1.1);
 }
 
-.porto .tiga {
-    background-image: url("https://images.unsplash.com/photo-1476842634003-7dcca8f832de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.card-contain:hover .card-desk p {
+    opacity: 1;
 }
 
-.porto .empat {
-    background-image: url("https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-}
-
-.porto .lima {
-    background-image: url("https://images.unsplash.com/photo-1705404193661-73eb21f6514a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.card-contain:hover .card-desk .my-button {
+    opacity: 1;
 }
 
 .card-contain .card-desk {
+    position: absolute;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -120,18 +120,24 @@ media (max-width: 769px) {
     color: #fff;
 }
 
+/* .deskription {
+    display: none;
+} */
+
 .card-contain .card-desk h5 {
     font-size: 14px;
     color: #fff;
 }
 
 .card-contain .card-desk p {
+    opacity: 0;
     font-size: 10px;
     color: #fff;
     transition: 1s ease;
 }
 
 .card-desk .my-button {
+    opacity: 0;
     background-color: #6ba7c3;
     color: #fff;
     font-size: 14px;

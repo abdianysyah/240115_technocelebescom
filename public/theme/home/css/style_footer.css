@@ -92,6 +92,10 @@ a {
     border: none;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 @keyframes slide-down {
     from {
         transform: translateY(-10px);

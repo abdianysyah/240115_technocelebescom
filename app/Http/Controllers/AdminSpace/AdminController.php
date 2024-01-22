@@ -7,8 +7,16 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function dashboard()
     {
         return view('panel.dashboard');
+    }
+    public function testimoni()
+    {
+        return ('panel.testimoni_form');
+    }
+    public function portofolio()
+    {
+        return view('panel.portofolio_form');
     }
 }

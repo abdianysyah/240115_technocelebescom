@@ -52,6 +52,13 @@
     }
 }
 
+
+
+@media only screen and (max-width: 576px)  {
+    .carousel-caption {
+        margin-bottom: 8rem;
+        font-family: 'poppins', sans-serif;
+
 @media only screen and (max-width: 576px) {
     .carousel-caption {
         margin-bottom: 8rem;

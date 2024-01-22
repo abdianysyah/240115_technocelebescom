@@ -38,7 +38,11 @@
             <h2 class="text-center mb-4">Misi</h2>
             <div class="row justify-content-center">
                 <!-- card ke 1 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+                
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Pembuatan perangkat lunak</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-laptop fa-5x mb-3"></i>
@@ -46,7 +50,11 @@
                     </div>
                 </div>
                 <!-- card ke 2 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+                
                     <h2 class="fs-4 text-center mb-4">Pemeliharaan dan Pembaharuan Perangkat Keras</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-wrench fa-5x mb-3"></i>
@@ -54,7 +62,11 @@
                     </div>
                 </div>
                 <!-- card ke 3 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Pembuatan Web</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-code fa-5x mb-3"></i>
@@ -62,7 +74,11 @@
                     </div>
                 </div>
                 <!-- card ke 4 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">IT Konsultan</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-chart-bar fa-5x mb-3"></i>
@@ -70,7 +86,11 @@
                     </div>
                 </div>
                 <!-- card ke 5 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Design Digital</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-paint-brush fa-5x mb-3"></i>
@@ -78,7 +98,11 @@
                     </div>
                 </div>
                 <!-- card ke 6 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Instalasi Jaringan</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-network-wired fa-5x mb-3"></i>
@@ -86,7 +110,11 @@
                     </div>
                 </div>
                 <!-- card ke 7 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Pembuat Konten Web</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-file fa-5x mb-3"></i>
@@ -94,7 +122,11 @@
                     </div>
                 </div>
                 <!-- card ke 8 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Internet of Things (IoT)</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-wifi fa-5x mb-3"></i>
@@ -102,7 +134,11 @@
                     </div>
                 </div>
                 <!-- card ke 9 -->
+
+                <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                 <div class="col-lg-5 col-md-6 col-sm-10 mx-4 my-3 shadow item-misi" style="border-radius: 30px;" data-aos="fade-up" data-aos-duration="0900">
+
                     <h2 class="fs-4 text-center mb-4">Machine Learning</h2>
                     <div class="mission-item mb-4 text-center">
                         <i class="fas fa-robot fa-5x mb-3"></i>

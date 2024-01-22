@@ -1,5 +1,9 @@
 
+$(document).ready(function(){
+
+
 $(document).ready(function () {
+
     $(".navbar-toggler").on("click", function () {
         if ($(".navbar-toggler").attr("aria-expanded") === "true") {
             $("nav").addClass("bg-scroll");
@@ -7,6 +11,9 @@ $(document).ready(function () {
             $("nav").removeClass("bg-scroll");
         }
     });
+
+});
+  
 });
 
 // $(".card-contain")

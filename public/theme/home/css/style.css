@@ -203,5 +203,13 @@
 
 
 .btn-contact {
-    
+    color: antiquewhite;
+    background-color: #6ba7c3;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    color: rgb(77, 77, 77);
+    background-color: antiquewhite;
+    border: 3px solid #6ba7c3;
 }

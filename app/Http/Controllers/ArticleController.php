@@ -22,6 +22,6 @@ class ArticleController extends Controller
         $k->image = $image;
         $k->isi = $isi;
         $k->save();
-        return redirect()->route('create-stock-get');
+        return redirect()->route('create-article-get');
     }
 }

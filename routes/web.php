@@ -29,4 +29,9 @@ Route::get('/about', 'Homespace\HomeController@about')->name('about');
 Route::get('/visi_misi', 'Homespace\HomeController@visi_misi')->name('visi_misi');
 
 
-Route::post('create-article','ArticleController@create_article')->name('create-article');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', "AdminSpace\AdminController@index")->name("dashboard");
+});
+
+Route::post('create-article', 'ArticleController@create_article')->name('create-article');

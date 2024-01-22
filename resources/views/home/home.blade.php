@@ -2,7 +2,7 @@
 @section('content')
 <main class="main">
     <!-- section why chouse us -->
-    <div class="container my-5">
+    <div class="container my-5 nama">
         <h2 class="display-6 fw-bold mb-5 text-center" style="font-family: 'poppins';" data-aos="zoom-in-up" data-aos-duration="1000">Kenapa memilih kami?</h2>
         <div class="row">
             <!-- gambar why choose us -->
@@ -243,7 +243,7 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 cordiono">
         <h2 class="display-6 fw-bold mb-5 text-center" style="font-family: 'poppins';" data-aos="zoom-in-up" data-aos-duration="0800">FAQ</h2>
         <div class="row justify-content-center">
             <!-- faq image -->

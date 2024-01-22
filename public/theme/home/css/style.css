@@ -213,3 +213,21 @@
     background-color: antiquewhite;
     border: 3px solid #6ba7c3;
 }
+
+.service ul.list-unstyled li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px; 
+
+}
+
+.service ul.list-unstyled li i {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.service ul.list-unstyled li i.fas.fa-check {
+    color: #28a745;
+}

@@ -31,10 +31,10 @@
     </div>
   </nav>
 
-  <div class="container-fluid mb-5 p-0 car mx-0">
+  <div class="container-fluid mb-5 p-0 mx-0 car">
     <div class="row">
       <div class="col-12">
-        <div id="carouselExampleAutoplaying" class="carousel slide">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>

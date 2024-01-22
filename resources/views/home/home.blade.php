@@ -243,7 +243,7 @@
         </div>
     </div>
 
-    <div class="container my-5 ">
+    <div class="container my-5 cordiono">
         <h2 class="display-6 fw-bold mb-5 text-center" style="font-family: 'poppins';" data-aos="zoom-in-up" data-aos-duration="0800">FAQ</h2>
         <div class="row justify-content-center">
             <!-- faq image -->

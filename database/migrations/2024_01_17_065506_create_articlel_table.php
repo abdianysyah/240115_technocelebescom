@@ -19,6 +19,7 @@ class CreateArticlelTable extends Migration
             $table->string('title',220);    
             $table->text('image');
             $table->text('isi');
+            $table->timestamps();
             $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
         });
     }

@@ -38,7 +38,9 @@
     <script src="{{asset('theme/home/plugin/jquery/jquery-3.7.1.min.js')}}"></script>
     <script src="{{asset('theme/home/plugin/OwlCarousel2-2.3.4/owl.carousel.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-RM5tpOEd8GE6uj1t9gfrFqFl5Hly6dpb1E/B1lR9DO8z/FfYKVv/7pDCGh5PLONZ" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- custom js -->
     <script src="{{asset('theme/home/js/main.js')}}"></script>

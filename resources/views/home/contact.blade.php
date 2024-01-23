@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <!-- konsultasi section -->
-                <div class="col-lg-4 shadow" style="background-color: #6ba7c3;" data-aos="fade-right" data-aos-duration="1200">
+                <div class="col-lg-4 shadow" style="background-color: #96D1F1;" data-aos="fade-right" data-aos-duration="1200">
                     <div class="p-5" style="color:white">
                         <h2 class="fs-3">Konsultasi kepada tim kami</h2>
                         <p style="color: #e1e1e1">Hubungi kami untuk informasi lebih lanjut atau ada yang perlu ditanyakan</p>

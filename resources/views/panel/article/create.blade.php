@@ -23,9 +23,16 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
+            <!-- Textarea yang akan digantikan oleh CKEditor -->
+            <textarea name="content"></textarea>
+            <!-- Tombol untuk memanggil fungsi getValueFromCKEditor() -->
+            <button onclick="getValueFromCKEditor()">Dapatkan Nilai CKEditor</button>
         </div>
     </section>
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+
+
 @endsection

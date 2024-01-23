@@ -65,7 +65,7 @@
 }
 
 .bread-crumb {
-    background-color: #6ba7c3;
+    background-color: #48A2D3;
 }
 
 
@@ -203,15 +203,15 @@
 
 
 .btn-contact {
-    color: antiquewhite;
-    background-color: #6ba7c3;
+    color: white;
+    background-color: #96D1F1;
     font-weight: bold;
 }
 
 .btn-contact:hover {
     color: rgb(77, 77, 77);
-    background-color: antiquewhite;
-    border: 3px solid #6ba7c3;
+    background-color: white;
+    border: 3px solid #96D1F1;
 }
 
 .service ul.list-unstyled li {

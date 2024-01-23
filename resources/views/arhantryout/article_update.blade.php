@@ -7,18 +7,18 @@
   <title>Update Article</title>
 </head>
 <body>
-  <form method="post" action="{{ route('update-article-post', ['article_id' => $article->article_id]) }}">
+  <form method="post" action="{{ route('update-article-post', ['article_id' => $->article_id]) }}">
   {{ @csrf_field()}}
     @method('PUT')
 
     <label>Title</label>
-    <input type="text" name="title" value="{{ $article->title }}">
+    <input type="text" name="title" value="{{ $article-id->title }}">
 
     <label>Image</label>
-    <input type="text" name="image" value="{{ $article->image }}">
+    <input type="text" name="image" value="{{ $article-id->image }}">
 
     <label>Isi</label>
-    <input type="text" name="isi" value="{{ $article->isi }}">
+    <input type="text" name="isi" value="{{ $article-id->isi }}">
 
     <button type="submit">Update</button>
   </form>

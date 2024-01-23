@@ -10,23 +10,24 @@ class ArticleController extends Controller
 {
     public function view_create()
     {
-         return view("arhantryout.article_create");
-    	// return view("panel.article.create");
+        //  return view("arhantryout.article_create");
+    	return view("panel.article.create");
     }
 
     public function view_update()
     {
-        return view("arhantryout.article_update");
-    	// return view("panel.article.update");
+        // return view("arhantryout.article_update");
+    	return view("panel.article.update");
     }
 
     public function view_list()
     {
-        $article = ArticleModel::all();
-        return view('arhantryout.article_list',['article' => $article]);
-    	// return view("panel.article.list");
         // $article = ArticleModel::all();
-        // return view('article',['article' => $article]);
+        // return view('arhantryout.article_list',['article' => $article]);
+    	// return view("panel.article.list");
+        $article = ArticleModel::all();
+        
+        return view('panel.article.create',['article' => $article]);
     }
 
     public function post_delete(Request $request)

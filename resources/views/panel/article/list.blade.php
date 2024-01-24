@@ -21,7 +21,7 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <section class="content row">
+    <section class="content">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-10">
@@ -36,20 +36,7 @@
                             </tr>
                         </thead>
                         <tbody class="table-body" style="color: black;background-color:antiquewhite;">
-                            <tr>
-                                <td>1</td>
-                                <td class='pongko'>ini judul</td>
-                                <td><img src="https://placekitten.com/100/100" class="img-fluid" alt="..." style="width:20rem;"></td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet voluptate quasi, quos aliquam ipsum modi voluptatem doloremque, itaque error dignissimos maiores amet, odio at adipisci dolores? Saepe, quia temporibus.</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger btn-square">
-                                        <i class="fas fa-times fa-1x"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-square">
-                                        <i class="fas fa-pencil-alt fa-1x"></i>
-                                    </button>
-                                </td>
-                            </tr>
+                            <!-- data here -->
                         </tbody>
                     </table>
                 </div>
@@ -67,25 +54,26 @@
     $(document).ready(function() {
         $.get("http://127.0.0.1:8000/admin/article/list-a", function(kambing) {
             var g = kambing['data']
-            teks = ""
+            var teks = "";
             for (var i = 0; i < g.length; i++) {
                 teks += `<tr>
-                                <td>1</td>
-                                <td class='pongko'>ini judul</td>
-                                <td><img src="https://placekitten.com/100/100" class="img-fluid" alt="..." style="width:20rem;"></td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eveniet voluptate quasi, quos aliquam ipsum modi voluptatem doloremque, itaque error dignissimos maiores amet, odio at adipisci dolores? Saepe, quia temporibus.</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger btn-square">
-                                        <i class="fas fa-times fa-1x"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary btn-square">
-                                        <i class="fas fa-pencil-alt fa-1x"></i>
-                                    </button>
-                                </td>
-                            </tr>`
+                            <td>${i+1}</td>
+                            <td class='pongko'>${g[i]['title']}</td>
+                            <td><img src="${g[i]['image']}" class="img-fluid" alt="${g[i]['image']}" style="width:20rem;"></td>
+                            <td>${g[i]['isi']}</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-square">
+                                    <i class="fas fa-times fa-1x"></i>
+                                </button>
+                                <button type="button" class="btn btn-primary btn-square">
+                                    <i class="fas fa-pencil-alt fa-1x"></i>
+                                </button>
+                            </td>
+                        </tr>`;
             }
-            $(".tbody").append(teks);
+            $(".table-body").append(teks);
         }, 'json');
     });
 </script>
+
 @endsection

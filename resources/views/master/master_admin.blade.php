@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard 2</title>
+    <title>Tecno Celebes | Admin </title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/theme/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/theme/admin/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/theme/admin/css/style.css">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -63,9 +66,15 @@
     <script src="/theme/admin/js/main.js"></script>
     <script src="/theme/admin/js/qodri.js"></script>
     <!-- Skrip untuk menggantikan textarea dengan CKEditor -->
+
+    <script>
+        CKEDITOR.replace('editor1', {
+            contentsCss: ['theme/admin/css/style.css'] // Adjust the path to your CSS file
+        });
+    </script>
+
 </body>
 
 </html>
 
 @yield('helperfooter')
-@yield('drag-img')

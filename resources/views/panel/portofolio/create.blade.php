@@ -25,7 +25,21 @@
         <div class="container-fluid">
         </div>
     </section>
-    <!-- /.content -->
+    <form method="post" action = "{{route('create-portofolio-post')}}" enctype="multipart/form-data">
+    {{ @csrf_field()}}
+    <label>title</label>
+    <input type="text" name ="title">
+
+    <label>image</label>
+    <input type="file" name ="picture">
+    
+    <label>isi</label>
+    <input type="text" name ="content">
+
+    <label>category</label>
+    <input type="choice" name ="category">
+    <button type="submit">tambah</button>
+</form>
 </div>
 <!-- /.content-wrapper -->
 @endsection

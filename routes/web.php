@@ -46,13 +46,13 @@ Route::prefix('admin')->group(function () {
 	});
 
 	Route::prefix('portofolio')->group(function () {
-	    Route::get('/list', "AdminSpace\PorotoflioController@view_list")->name("portofolio-list");
-	    Route::get('/create', "AdminSpace\PorotoflioController@view_create")->name("create-portofolio");
-	    Route::get('/update', "AdminSpace\PorotoflioController@view_update")->name("create-portofolio");
+	    Route::get('/list', "AdminSpace\PortofolioController@view_list")->name("portofolio-list");
+	    Route::get('/create', "AdminSpace\PortofolioController@view_create")->name("create-portofolio");
+	    Route::get('/update', "AdminSpace\PortofolioController@view_update")->name("create-portofolio");
 
-	    Route::post('/delete', "AdminSpace\PorotoflioController@post_delete")->name("delete-portofolio-post");
-	    Route::post('/create', "AdminSpace\PorotoflioController@post_create")->name("create-portofolio-post");
-	    Route::post('/update', "AdminSpace\PorotoflioController@post_update")->name("update-portofolio-post");
+	    Route::post('/delete', "AdminSpace\PortofolioController@post_delete")->name("delete-portofolio-post");
+	    Route::post('/create', "AdminSpace\PortofolioController@post_create")->name("create-portofolio-post");
+	    Route::post('/update', "AdminSpace\PortofolioController@post_update")->name("update-portofolio-post");
 	});
 });
 

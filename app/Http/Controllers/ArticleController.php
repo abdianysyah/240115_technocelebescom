@@ -10,7 +10,8 @@ class ArticleController extends Controller
     public function artikel()
     {
         $article = ArticleModel::all();
-        return view('article',['article' => $article]);
+        // return view('article',['article' => $article]);
+        return view('arhantryout.article_list',['article' => $article]);
     }
     public function create_article(Request $request){
         $title = $request->title;

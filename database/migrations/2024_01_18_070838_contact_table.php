@@ -19,6 +19,7 @@ class ContactTable extends Migration
             $table->string('email')->unique();
             $table->string("subject");
             $table->text("pesan");
+            $table->timestamps();
         });
     }
 

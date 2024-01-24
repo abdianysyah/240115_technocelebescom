@@ -17,7 +17,7 @@
         <!-- Jumbotron -->
         <div class="jumbotron" data-aos="fade-up" data-aos-duration="1100">
             <div class="container">
-                <h1 class="display-4">Selamat Datang di CV Techno Celebes</h1>
+                <h1 class="display-6 fw-bold" style="color: #003853;">Selamat Datang di CV Techno Celebes</h1>
                 <p class="lead text-secondary">Bergerak di bidang teknologi informasi sejak 2013.</p>
             </div>
         </div>

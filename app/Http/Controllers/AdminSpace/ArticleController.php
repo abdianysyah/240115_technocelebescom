@@ -30,6 +30,11 @@ class ArticleController extends Controller
         return view('panel.article.create',['article' => $article]);
     }
 
+    public function post_list(){
+        $article = ArticleModel::paginate(10);
+        echo json_encode($article);
+    }
+
     public function post_delete(Request $request)
     {
         $data = array();
@@ -63,7 +68,18 @@ class ArticleController extends Controller
         }
     }
 
-    public function post_create(Request $request){
+    public function post_create(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|string',
+            'image' => 'requird'
+        ]);
+
+        $v = $file->getClientOriginalExtension();
+        //generate file name
+        $fileName = time() . rand(1, 999999) . '.' . $format;
+
+
         $title = $request->title;
         $image = $request->image;
         $isi = $request->isi;

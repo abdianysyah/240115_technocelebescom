@@ -38,6 +38,8 @@ Route::prefix('admin')->group(function () {
 	    Route::get('/create', "AdminSpace\ArticleController@view_create")->name("create-article");
 	    Route::get('/update', "AdminSpace\ArticleController@view_update")->name("create-article");
 
+	    Route::get('/list-a', "AdminSpace\ArticleController@post_list")->name("delete-article-post");
+	    // Route::post('/list', "AdminSpace\ArticleController@post_list")->name("delete-article-post");
 	    Route::post('/delete', "AdminSpace\ArticleController@post_delete")->name("delete-article-post");
 	    Route::post('/create', "AdminSpace\ArticleController@post_create")->name("create-article-post");
 	    Route::post('/update', "AdminSpace\ArticleController@post_update")->name("update-article-post");

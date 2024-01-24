@@ -26,7 +26,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <form action="submit" action="{{ route('create-article') }}" method="post" enctype="multipart/form-data">
+                        @if(session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                        @endif
+                        <form action="{{ route('create-article') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-floating my-3">
                                 <label for="floatingInput">Judul Article</label>
@@ -48,7 +53,7 @@
             </div>
         </div>
     </section>
-<!-- /.content -->
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 

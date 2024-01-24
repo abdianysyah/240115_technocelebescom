@@ -4,6 +4,7 @@ namespace App\Http\Controllers\AdminSpace;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use App\Model\Article as ArticleModel;
 
 class ArticleController extends Controller
@@ -72,17 +73,28 @@ class ArticleController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required|string',
-            'image' => 'requird'
+            'image' => 'image'
         ]);
 
-        $v = $file->getClientOriginalExtension();
+        $I = $request->image;
+    
+        if ($validator->fails()) {
+            print_r($validator->messages());
+        }
+
+        $F = $I->getClientOriginalExtension();
         //generate file name
-        $fileName = time() . rand(1, 999999) . '.' . $format;
+        $file = time() . rand(1, 999999) . '.' . $F;
+
+        // generate route name + $filename
+        $path = 'storage/' . $file;
+        //store file
+        $I->storeAs('public/image/', $file);
 
 
         $title = $request->title;
-        $image = $request->image;
-        $isi = $request->isi;
+        $image = $file;
+        $isi = $request->editor1;
 
         $k = new ArticleModel();
         $k->title = $title;

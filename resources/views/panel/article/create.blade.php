@@ -23,6 +23,24 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-floating my-3">
+                          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Judul Article</label>
+                        </div>
+                        <div class="input-group mb-3">
+                          <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                          <input type="file" class="form-control" id="inputGroupFile01" placeholder="masukkan foto">
+                        </div>
+                        <div class="form-floating my-3">
+                          <textarea name="content" id="editor1" rows="5" cols="80" ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- /.content -->

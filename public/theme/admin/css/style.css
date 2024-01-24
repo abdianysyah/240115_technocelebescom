@@ -1,0 +1,17 @@
+body {
+    background-color: #fff;
+}
+
+.content .drop-area {
+    background-color: #343A40;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #6C757D;
+    padding: 20px 0;
+}
+
+
+.content .drop-area .btn-1, .content .btn-2 {
+    background-color: orange;
+    border: none;
+}

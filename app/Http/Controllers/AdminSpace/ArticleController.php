@@ -4,6 +4,7 @@ namespace App\Http\Controllers\AdminSpace;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Model\Article as ArticleModel;
 
 class ArticleController extends Controller
 {
@@ -22,6 +23,11 @@ class ArticleController extends Controller
     	return view("panel.article.list");
         // $article = ArticleModel::all();
         // return view('article',['article' => $article]);
+    }
+
+    public function post_list(){
+        $article = ArticleModel::paginate(10);
+        echo json_encode($article);
     }
 
     public function post_delete(Request $request){

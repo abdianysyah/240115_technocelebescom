@@ -81,6 +81,12 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-sign-out-alt fa-1x"></i>
+                        <p> Log Out</p>
+                    </a>
+                </li>
 
             </ul>
         </nav>

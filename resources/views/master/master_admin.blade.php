@@ -53,13 +53,20 @@
         <script src="/theme/admin/plugins/raphael/raphael.min.js"></script>
         <script src="/theme/admin/plugins/jquery-mapael/jquery.mapael.min.js"></script>
         <script src="/theme/admin/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+        <script src="/theme/admin/ckeditor/ckeditor.js"></script>
         <!-- ChartJS -->
         <script src="/theme/admin/plugins/chart.js/Chart.min.js"></script>
 
         <!-- AdminLTE for demo purposes -->
         <script src="/theme/admin/dist/js/demo.js"></script>
+        <script src="/theme/admin/js/main.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="/theme/admin/dist/js/pages/dashboard2.js"></script>
+        <!-- Skrip untuk menggantikan textarea dengan CKEditor -->
+        <script>
+            // Konfigurasi tambahan CKEditor
+            CKEDITOR.replace('content');
+        </script>
 </body>
 
 </html>

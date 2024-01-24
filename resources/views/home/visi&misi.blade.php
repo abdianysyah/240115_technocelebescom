@@ -19,7 +19,7 @@
         <!-- Header Section -->
         <header class="jumbotron text-center" data-aos="fade-up" data-aos-duration="0900">
             <div class="container">
-                <h1 class="display-4">Visi & Misi CV Techno Celebes</h1>
+                <h1 class="display-6 fw-bold" style="color: #003853;">Visi & Misi CV Techno Celebes</h1>
                 <p class="lead">Inovatif, Terpercaya, dan Berkontribusi pada Kemajuan Teknologi Informasi.</p>
             </div>
         </header>
@@ -34,7 +34,7 @@
         </section>
 
         <!-- Misi Section -->
-        <section id="mission" class="container mt-5">
+        <section id="mission" class="container mt-5 mission">
             <h2 class="text-center mb-4">Misi</h2>
             <div class="row justify-content-center">
                 <!-- card ke 1 -->

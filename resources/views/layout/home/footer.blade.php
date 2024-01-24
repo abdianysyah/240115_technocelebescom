@@ -39,5 +39,8 @@
                 </div>
             </div>
         </div>
+        <div class="text-center p-3" style="border-top: 1px solid #fff;">
+            <p>Copyright © 2024 All rights reserved | This website is developed by <a href="#" style="color: #003853;">Techno Celebes</a></p>
+        </div>
     </div>
 </footer>

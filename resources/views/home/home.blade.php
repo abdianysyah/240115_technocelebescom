@@ -1,6 +1,6 @@
 @extends('master.master_home')
 @section('content')
-<main class="main">
+<main class="main home-page">
     <!-- section why chouse us -->
     <div class="container my-5 nama">
         <h2 class="display-6 fw-bold mb-5 text-center" style="font-family: 'poppins';" data-aos="zoom-in-up" data-aos-duration="1000">Kenapa memilih kami?</h2>
@@ -8,7 +8,7 @@
             <!-- gambar why choose us -->
             <div class="col-lg-5 col-md-12 mx-auto" data-aos="fade-right" data-aos-duration="0900">
                 <div class="text-center img-choose">
-                    <img src="theme/home/asets/why-choose-us-1.jpg" class="rounded-3 img-fluid why-choose-us" style="box-shadow: 0 4px 8px #B0B0B0;" alt="image">
+                    <img src="theme/home/asets/why-choose-us-1.jpg" class="rounded-4 shadow img-fluid why-choose-us" alt="image">
                 </div>
             </div>
             <!-- caption why choose us -->

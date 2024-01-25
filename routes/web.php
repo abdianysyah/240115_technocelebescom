@@ -48,7 +48,7 @@ Route::prefix('admin')->group(function () {
 	Route::prefix('portofolio')->group(function () {
 	    Route::get('/list', "AdminSpace\PortofolioController@view_list")->name("portofolio-list");
 	    Route::get('/create', "AdminSpace\PortofolioController@view_create")->name("create-portofolio");
-	    Route::get('/update', "AdminSpace\PortofolioController@view_update")->name("create-portofolio");
+	    Route::get('/update/{portofolio_id}', "AdminSpace\PortofolioController@view_update")->name("update-portofolio");
 
 	    Route::post('/delete', "AdminSpace\PortofolioController@post_delete")->name("delete-portofolio-post");
 	    Route::post('/create', "AdminSpace\PortofolioController@post_create")->name("create-portofolio-post");

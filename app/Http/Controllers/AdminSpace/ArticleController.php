@@ -113,7 +113,7 @@ class ArticleController extends Controller
     {
         try {
 
-            $k = ArticleModel::findOrFail($request->article_id);
+            $article = ArticleModel::findOrFail($request->article_id);
             
             $validator = Validator::make($request->all(), [
                 'title' => 'required|string',

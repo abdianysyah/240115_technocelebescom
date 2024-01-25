@@ -15,10 +15,11 @@ class ArticleController extends Controller
     	return view("panel.article.create");
     }
 
-    public function view_update()
+    public function view_update($article_id)
     {
-        // return view("arhantryout.article_update");
-    	return view("panel.article.update");
+        $article = ArticleModel::find($article_id);
+        // return view("arhantryout.article_update",['article' => $article]);
+    	return view("panel.article.update",['article' => $article]);
     }
 
     public function view_list()
@@ -26,6 +27,9 @@ class ArticleController extends Controller
         // $article = ArticleModel::all();
         // return view('arhantryout.article_list',['article' => $article]);
     	// return view("panel.article.list");
+
+        return view('panel.article.list');
+
         $article = ArticleModel::all();
         
         return view('panel.article.list',['article' => $article]);
@@ -105,19 +109,46 @@ class ArticleController extends Controller
         return redirect()->route('article-list');
     }
 
-    public function post_update($article_id, $newTitle, $newImage, $newIsi)
+    public function post_update(Request $request)
     {
         try {
+
+            $k = ArticleModel::findOrFail($request->article_id);
+            
+            $validator = Validator::make($request->all(), [
+                'title' => 'required|string',
+                'image' => 'image'
+            ]);
+    
+            $I = $request->image;
+        
+            if ($validator->fails()) {
+                print_r($validator->messages());
+            }
+    
+            $F = $I->getClientOriginalExtension();
+            //generate file name
+            $file = time() . rand(1, 999999) . '.' . $F;
+    
+            // generate route name + $filename
+            $path = 'storage/' . $file;
+            //store file
+            $I->storeAs('public/image/', $file);
+
+
             // Find the article by ID
-            $article = Article::findOrFail($article_id);
+            
     
-            // Update the fields
-            $article->title = $newTitle;
-            $article->image = $newImage;
-            $article->isi = $newIsi;
+            $title = $request->title;
+            $image = $file;
+            $isi = $request->editor1;
     
-            // Save the changes
-            $article->save();
+            $k->title = $title;
+            $k->image = $image;
+            $k->isi = $isi;
+            $k->id = 1;
+            $k->save();
+            return redirect()->route('article-list');
     
             return response()->json(['message' => 'Article updated successfully']);
         } catch (\Exception $e) {

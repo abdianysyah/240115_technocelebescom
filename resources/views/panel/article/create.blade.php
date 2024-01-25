@@ -28,13 +28,15 @@
                     <div class="col-lg-8">
                         <form action="">
                             @csrf
+                        <form method="post" action = "{{route('create-article-post')}}"  enctype="multipart/form-data">
+                            {{ @csrf_field()}}
                             <div class="form-floating my-3">
                                 <label for="floatingInput">Judul Article</label>
-                                <input type="text" class="form-control" id="floatingInput" placeholder="Judul">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Judul" name ="title">
                             </div>
                             <div class="drop-area text-center my-3 rounded-5" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
                                 <p class="mb-3">Drag & drop an image here</p>
-                                <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)" class="d-none">
+                                <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)" class="d-none" name ="image">
                                 <label for="file-input" class="btn btn-warning btn-1">Choose File</label>
                                 <img id="preview-image" src="#" alt="Preview" style="display:none; max-width: 100%; margin-top: 20px;">
                             </div>

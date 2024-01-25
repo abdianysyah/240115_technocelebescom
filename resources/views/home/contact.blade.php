@@ -19,7 +19,7 @@
                 <div class="col-lg-8 mb-5 mb-lg-0 order-lg-2 shadow " data-aos="fade-left" data-aos-duration="1200">
                     <div class="cardp-5">
                         <div class="card-body p-5">
-                            <h2 class="card-title text-center fw-bolder p-3">Contact Us</h2>
+                            <h2 class="card-title text-center fw-bolder p-3" style="color: #003853;">Contact Us</h2>
                             <form action="" method="">
                                 <div class="row">
                                     <div class="col-md">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <!-- konsultasi section -->
-                <div class="col-lg-4 shadow" style="background-color: #6ba7c3;" data-aos="fade-right" data-aos-duration="1200">
+                <div class="col-lg-4 shadow" style="background-color: #007DBA;" data-aos="fade-right" data-aos-duration="1200">
                     <div class="p-5" style="color:white">
                         <h2 class="fs-3">Konsultasi kepada tim kami</h2>
                         <p style="color: #e1e1e1">Hubungi kami untuk informasi lebih lanjut atau ada yang perlu ditanyakan</p>

@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 
 Route::get('/home', 'Homespace\HomeController@index')->name('home');
-Route::get('/admin', 'Homespace\AdminController@admin')->name('admin');
-Route::get('/article', 'Homespace\ArticleController@artikel')->name('article');
+Route::get('/article', 'Homespace\HomeController@article')->name('article');
+Route::get('/article-single/{article_id}', 'Homespace\HomeController@article_single')->name('article-single');
 Route::get('/contact', 'Homespace\HomeController@contact')->name('contact');
 Route::get('/profile', 'Homespace\HomeController@profile')->name('profile');
 Route::get('/service', 'Homespace\HomeController@service')->name('service');
@@ -38,9 +38,21 @@ Route::prefix('admin')->group(function () {
 	    Route::get('/create', "AdminSpace\ArticleController@view_create")->name("create-article");
 	    Route::get('/update', "AdminSpace\ArticleController@view_update")->name("create-article");
 
+	    Route::get('/list-a', "AdminSpace\ArticleController@post_list")->name("delete-article-post");
+	    // Route::post('/list', "AdminSpace\ArticleController@post_list")->name("delete-article-post");
 	    Route::post('/delete', "AdminSpace\ArticleController@post_delete")->name("delete-article-post");
 	    Route::post('/create', "AdminSpace\ArticleController@post_create")->name("create-article-post");
 	    Route::post('/update', "AdminSpace\ArticleController@post_update")->name("update-article-post");
+	});
+
+	Route::prefix('portofolio')->group(function () {
+	    Route::get('/list', "AdminSpace\PortofolioController@view_list")->name("portofolio-list");
+	    Route::get('/create', "AdminSpace\PortofolioController@view_create")->name("create-portofolio");
+	    Route::get('/update', "AdminSpace\PortofolioController@view_update")->name("create-portofolio");
+
+	    Route::post('/delete', "AdminSpace\PortofolioController@post_delete")->name("delete-portofolio-post");
+	    Route::post('/create', "AdminSpace\PortofolioController@post_create")->name("create-portofolio-post");
+	    Route::post('/update', "AdminSpace\PortofolioController@post_update")->name("update-portofolio-post");
 	});
 });
 

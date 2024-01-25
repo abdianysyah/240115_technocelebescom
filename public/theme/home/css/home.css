@@ -33,7 +33,14 @@
         margin-bottom: 9rem;
         font-family: "poppins", sans-serif;
     }
+
+    .car-img img {
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+        width: 100%; /* Ensure the image takes the full width of its container */
+    }
 }
+
 
 @media only screen and (max-width: 1300px) {
     .carousel-caption {
@@ -52,18 +59,17 @@
     }
 }
 
-
-
-@media only screen and (max-width: 576px)  {
-    .carousel-caption {
-        margin-bottom: 8rem;
-        font-family: 'poppins', sans-serif;
-
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
     .carousel-caption {
         margin-bottom: 8rem;
         font-family: "poppins", sans-serif;
         margin-right: 0;
+    }
+
+    .car-img img {
+        max-width: 100%; /* Make the image responsive */
+        object-fit: cover;
+        width: 18rem;
     }
 
     .carousel-caption h1 {
@@ -73,9 +79,8 @@
     .carousel-caption p {
         font-size: 12px;
     }
+}
 
-    .car-img {
-        width: 100%;
-        height: auto;
-    }
+.home-page h2 {
+    color: #003853;
 }

@@ -1,3 +1,13 @@
+body {
+    right: 0;
+    left: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (max-width: 769px) {
     .img-choose img {
         height: 20rem;
@@ -6,7 +16,14 @@
     }
 }
 
+.img-choose:hover {
+    transform: scale(1.02);
+    transition: 500ms;
+}
+
+
 .img-choose {
+    transition: 500ms;
     position: relative;
 }
 
@@ -37,12 +54,7 @@
     transform: scale(1.05);
 }
 
-.badge {
-    box-shadow: 0 4px 8px #B0B0B0;
-}
-
 .card {
-    box-shadow: -4px 4px 8px #B0B0B0;
     height: 34rem;
 }
 
@@ -55,17 +67,18 @@
 }
 
 .text-breadcrumb a {
-    color: black;
+    color: white;
     transition: 300ms;
 }
 
 .text-breadcrumb a:hover {
-    color: wheat;
+    color: #003853;
     transition: 300ms;
 }
 
 .bread-crumb {
-    background-color: #6ba7c3;
+    background-color: #004D72;
+    color: white;
 }
 
 
@@ -181,12 +194,21 @@
     }
 }
 
-.item-misi:hover h2 {
-    margin-top:-12px;
+.mission h2 {
+    color: #003853;
+    font-weight: bold;
+}
+
+.item-misi:hover h2,
+.item-misi:hover p {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
     transition: 500ms;
 }
 
-.item-misi h2 {
+
+.item-misi h2,
+.item-misi p {
     transition: 500ms;
 }
 
@@ -201,18 +223,21 @@
     transition: 500ms;
 }
 
+/* ==============contact page css================= */
 
 .btn-contact {
-    color: antiquewhite;
-    background-color: #6ba7c3;
+    color: white;
+    background-color: #007DBA;
     font-weight: bold;
 }
 
 .btn-contact:hover {
     color: rgb(77, 77, 77);
-    background-color: antiquewhite;
-    border: 3px solid #6ba7c3;
+    background-color: white;
+    border: 3px solid #007DBA;
 }
+
+/* ===========service page css============ */
 
 .service ul.list-unstyled li {
     position: relative;
@@ -230,4 +255,51 @@
 
 .service ul.list-unstyled li i.fas.fa-check {
     color: #28a745;
+}
+
+.service-item button {
+    background-color: #03AAFB;
+    color: #003853;
+}
+
+.service-item button:hover {
+    background-color: #003853;
+    color: #03AAFB;
+}
+
+.service-item:hover .shadow {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    transition: 500ms;
+}
+
+.service-item .shadow {
+    transition: 500ms;
+}
+
+.service-item:hover .shadow .text-center i {
+    transform: scale(1.1);
+    color: #000;
+    transition: 500ms;
+}
+.service-item .shadow .text-center i {
+    transition: 500ms;
+    color: #323232;
+}
+
+.service-item h2 {
+    font-weight: bold;
+    color: #003853;
+}
+
+@media only screen and (min-width: 992px) {
+    .service-item .shadow {
+        height: 46rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .service-item .shadow {
+        height: 50rem;
+    }
 }

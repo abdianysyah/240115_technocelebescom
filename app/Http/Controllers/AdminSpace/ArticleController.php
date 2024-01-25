@@ -28,7 +28,7 @@ class ArticleController extends Controller
     	// return view("panel.article.list");
         $article = ArticleModel::all();
         
-        return view('panel.article.create',['article' => $article]);
+        return view('panel.article.list',['article' => $article]);
     }
 
     public function post_list(){

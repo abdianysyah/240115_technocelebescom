@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+	public function article(){
+		return view("home.article");
+	}
+	public function article_single(){
+		return view("home.article_single");
+	}
     public function index()
     {
         return view('home.home');

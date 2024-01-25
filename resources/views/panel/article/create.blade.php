@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <form action="{{ route('create-article') }}" method="post" enctype="multipart/form-data">
+                        <form action="">
                             @csrf
                             <div class="form-floating my-3">
                                 <label for="floatingInput">Judul Article</label>

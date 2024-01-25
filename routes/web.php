@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 
 Route::get('/home', 'Homespace\HomeController@index')->name('home');
-Route::get('/admin', 'Homespace\AdminController@admin')->name('admin');
-Route::get('/article', 'Homespace\ArticleController@artikel')->name('article');
+Route::get('/article', 'Homespace\HomeController@article')->name('article');
+Route::get('/article-single/{article_id}', 'Homespace\HomeController@article_single')->name('article-single');
 Route::get('/contact', 'Homespace\HomeController@contact')->name('contact');
 Route::get('/profile', 'Homespace\HomeController@profile')->name('profile');
 Route::get('/service', 'Homespace\HomeController@service')->name('service');

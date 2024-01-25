@@ -27,7 +27,12 @@ class ArticleController extends Controller
         // $article = ArticleModel::all();
         // return view('arhantryout.article_list',['article' => $article]);
     	// return view("panel.article.list");
+
         return view('panel.article.list');
+
+        $article = ArticleModel::all();
+        
+        return view('panel.article.list',['article' => $article]);
     }
 
     public function post_list(){

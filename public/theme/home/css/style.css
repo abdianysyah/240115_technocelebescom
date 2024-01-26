@@ -111,7 +111,7 @@ p {
     transform: scale(1.1);
 }
 
-.card-contain:hover .card-desk p {
+.card-contain:hover .card-desk .deskription{
     opacity: 1;
 }
 
@@ -128,25 +128,14 @@ p {
     transition: 1s ease;
 }
 
-.card-contain .card-desk h3 {
-    font-size: 24px;
-    color: #fff;
-}
-
-/* .deskription {
-    display: none;
-} */
-
-.card-contain .card-desk h5 {
-    font-size: 14px;
-    color: #fff;
-}
-
-.card-contain .card-desk p {
+.card-contain .card-desk .deskription {
     opacity: 0;
     font-size: 10px;
-    color: #fff;
     transition: 1s ease;
+}
+
+.card-contain .card-desk p{
+    color: #fff;
 }
 
 .card-desk .my-button {

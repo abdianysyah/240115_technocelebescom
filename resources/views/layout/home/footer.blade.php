@@ -4,7 +4,7 @@
             <div class="row justify-content-center py-4">
                 <!-- sosmed -->
                 <div class="col-lg-4 mb-4 social-media">
-                    <h4>Social Media</h4>
+                    <p class="fs-3">Social Media</p>
                     <ul class="list-unstyled d-flex">
                         <li><a href="" class="btn btn-light btn-square rounded-circle"><i class="fab fa-instagram footer-icon"></i></a>
                         </li>
@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <!-- privacy & policy -->
-                    <h4>Privacy & Policy</h4>
+                    <p class="fs-3">Privacy & Policy</p>
                     <ul class="list-unstyled">
                         <li><a href=""><i class="fas fa-scroll"></i> terms & condition</a></li>
                         <li><a href=""><i class="fas fa-suitcase"></i> career</a></li>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <!-- section Fast Link -->
-                    <h4>Fast Link</h4>
+                    <p class="fs-3">Fast Link</p>
                     <ul class="list-unstyled">
                         <li><a href="{{ route('home') }}"><i class="fas fa-home"></i> Home</a></li>
                         <li><a href="{{ route('about') }}"><i class="fas fa-info-circle"></i> Tentang</a></li>

@@ -15,7 +15,7 @@
 <div class="container">
     <header class="jumbotron">
         <div class="mt-3 text-center" data-aos="fade-up" data-aos-duration="0900">
-            <h1 class="display-6 fw-bold" style="color: #003853;">Service</h1>
+            <h2 class="display-6 fw-bold" style="color: #003853;">Service</h2>
 
             <p class="lead">Our Pricing & Plans</p>
         </div>

@@ -27,6 +27,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <form action="">
+                            @csrf
                             <div class="form-floating my-3">
                                 <label for="floatingInput">Judul Article</label>
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Judul">

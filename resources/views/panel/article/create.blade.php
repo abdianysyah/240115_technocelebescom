@@ -26,6 +26,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+                        <form action="">
+                            @csrf
                         <form method="post" action = "{{route('create-article-post')}}"  enctype="multipart/form-data">
                             {{ @csrf_field()}}
                             <div class="form-floating my-3">
@@ -48,7 +50,7 @@
             </div>
         </div>
     </section>
-<!-- /.content -->
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 

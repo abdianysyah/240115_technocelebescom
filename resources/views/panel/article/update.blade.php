@@ -26,21 +26,28 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+
+                        <form method="post" action="{{ route('update-article-post') }}">
+                        {{ @csrf_field()}}
+
                         <form action="">
+                            @csrf
+
                             <div class="form-floating my-3">
+                                <input type="hidden" name="article_id" value="{{ $article->article_id }}" enctype="multipart/form-data">
                                 <label for="floatingInput">Judul Article</label>
-                                <input type="text" class="form-control" id="floatingInput" placeholder="Judul">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Judul" name="title" value="{{ $article->title }}">
                             </div>
                             <div class="drop-area text-center my-3 rounded-5" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
                                 <p class="mb-3">Drag & drop an image here</p>
-                                <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)" class="d-none">
+                                <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)" class="d-none"  name="image" value="{{ $article->image }}">
                                 <label for="file-input" class="btn btn-warning btn-1">Choose File</label>
                                 <img id="preview-image" src="#" alt="Preview" style="display:none; max-width: 100%; margin-top: 20px;">
                             </div>
                             <div class="areas">
-                                <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                                <textarea type="text" name="editor1" id="editor1" rows="10" cols="80" value="{{ $article->isi }}"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-warning my-3 btn-2">Submit</button>
+                            <button type="submit" class="btn btn-warning my-3 btn-2">Update</button>
                         </form>
                     </div>
                 </div>

@@ -19,7 +19,7 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -56,7 +56,14 @@
             </div>
         </div>
     </section>
-    <!-- /.content -->
+    @foreach($porto as $p)
+    <tr>
+        <td>{{ $p->title }}</td>
+        <td>{{ $p->picture }}</td>
+        <td>{{ $p->content }}</td>
+        <td>{{ $p->caategory }}</td>
+    </tr>
+    @endforeach
 </div>
 <!-- /.content-wrapper -->
 @endsection

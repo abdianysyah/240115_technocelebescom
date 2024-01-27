@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArticlelTable extends Migration
+class PortofolioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateArticlelTable extends Migration
      */
     public function up()
     {
-        Schema::create('article', function (Blueprint $table) {
-            $table->bigIncrements('article_id');
-            $table->bigInteger("id")->unsigned();
-            $table->string('title',220);    
-            $table->text('image');
-            $table->text('isi');
+        Schema::create('portofolio', function (Blueprint $table) {
+            $table->bigIncrements('portofolio_id');
+            $table->string('title',255);
+            $table->tinyinteger('category');
+            $table->string('picture',400);
+            $table->text('content');
             $table->timestamps();
-            $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

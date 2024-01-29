@@ -14,15 +14,16 @@ class PortofolioController extends Controller
     	return view("panel.portofolio.create");
     }
 
-    public function view_update()
+    public function view_update($portofolio_id)
     {
-    	return view("panel.portofolio.update");
+        $portofolio1 = PortofolioModel::find($portofolio_id);
+    	return view("panel.portofolio.update",['port'=>$portofolio1]);
     }
 
     public function view_list()
     {
  
-        $Portofolio = PortofolioModel::all();
+        $Portofolio = PortofolioModel::paginate(3);
     	return view("panel.portofolio.list",['porto'=> $Portofolio]);
     }
 
@@ -51,7 +52,7 @@ class PortofolioController extends Controller
 
 
         $title = $request->title;
-        $picture = $filename;
+        $picture = $fileName;
         $content = $request->content;
         $category = $request->category;
 
@@ -99,15 +100,40 @@ class PortofolioController extends Controller
     public function post_update(Request $request){
         try {
             // Find the article by ID
-            $portofolio = Portofolio::findOrFail($portofolio_id);
+            $portofolio = PortofolioModel::findOrFail($request->portofolio_id);
+
+
+            $validator = Validator::make($request->all(), [
+                'title' => 'required|string',
+                'image' => 'image'
+            ]);
+
+            $file = $request->picture;
     
-            // Update the fields
-            $portofolio->title = $newTitle;
-            $portofolio->picture = $newPicture;
-            $portofolio->content = $newContent;
+            if ($validator->fails()) {
+                print_r($validator->messages());
+            }
     
-            // Save the changes
-            $portofolio->save();
+            $format = $file->getClientOriginalExtension();
+            //generate file name
+            $fileName = time() . rand(1, 999999) . '.' . $format;
+    
+            // generate route name + $filename
+            $path = 'storage/' . $fileName;
+            //store file
+            $file->storeAs('public/image/', $fileName);
+    
+            $title = $request->title;
+            $picture = $filename;
+            $content = $request->content;
+            $category = $request->category;
+    
+            $p = new PortofolioModel();
+            $p->title = $title;
+            $p->picture = $picture;
+            $p->content = $content;
+            $p->category = $category;
+            $p->save();
     
             return response()->json(['message' => 'Portofolio updated successfully']);
         } catch (\Exception $e) {

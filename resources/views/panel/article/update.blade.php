@@ -27,14 +27,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
 
-                        <form method="post" action="{{ route('update-article-post') }}">
+                        <form method="post" action="{{ route('update-article-post') }}" enctype="multipart/form-data">
                         {{ @csrf_field()}}
-
-                        <form action="">
-                            @csrf
-
                             <div class="form-floating my-3">
-                                <input type="hidden" name="article_id" value="{{ $article->article_id }}" enctype="multipart/form-data">
+                                <input type="hidden" name="article_id" value="{{ $article->article_id }}">
                                 <label for="floatingInput">Judul Article</label>
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Judul" name="title" value="{{ $article->title }}">
                             </div>

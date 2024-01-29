@@ -25,18 +25,17 @@
         <div class="container-fluid">
         </div>
     </section>
-    <form method="post" action="{{ route('update-portoflio-post', ['portofolio_id' => $->portofolio_id]) }}">
+    <form method="post" action="{{ route('update-portofolio-post')}}" enctype="multipart/form-data" >
   {{ @csrf_field()}}
-    @method('PUT')
-
+    <input type="hidden" name="portofolio_id" value="{{ $port->portofolio_id }}">
     <label>Title</label>
-    <input type="text" name="title" value="{{ $portofolio_id->title }}">
+    <input type="text" name="title" value="{{ $port->title }}">
 
     <label>Image</label>
-    <input type="text" name="image" value="{{ $portofolio_id->picture }}">
+    <input type="file" name="picture" value="{{ $port->picture }}">
 
     <label>Isi</label>
-    <input type="text" name="isi" value="{{ $portofolio_id->content }}">
+    <input type="text" name="content" value="{{ $port->content }}">
 
     <button type="submit">Update</button>
  </form>

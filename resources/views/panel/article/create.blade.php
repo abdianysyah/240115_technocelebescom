@@ -26,6 +26,13 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
+
+                        <form action="submit" action="{{ route('create-article') }}" method="post" enctype="multipart/form-data">
+                            @csrf
+                            <div class="form-floating my-3">
+                                <label for="floatingInput">Judul Article</label>
+                                <input type="name" class="form-control" id="floatingInput" placeholder="Judul">
+
                         <form action="">
                             @csrf
                         <form method="post" action = "{{route('create-article-post')}}"  enctype="multipart/form-data">
@@ -33,6 +40,8 @@
                             <div class="form-floating my-3">
                                 <label for="floatingInput">Judul Article</label>
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Judul" name ="title">
+
+
                             </div>
                             <div class="drop-area text-center my-3 rounded-5" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
                                 <p class="mb-3">Drag & drop an image here</p>
